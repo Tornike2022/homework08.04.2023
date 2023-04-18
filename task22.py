@@ -1,0 +1,16 @@
+n = int(input("введите кол-во элементов первого множества "))
+list_1=list()
+for i in range(n):
+    n1 = int(input())
+    list_1.append(n1)
+print(list_1)
+m = int(input("введите кол-во элементов второго множества "))
+list_2=list()
+for i in range(m):
+    n2 = int(input())
+    list_2.append(n2)
+print(list_2)
+l_1 = set(list_1)
+l_2 = set(list_2)
+l_3 = l_1.intersection(l_2)
+print("без повторений в порядке возрастания все те числа, которые встречаются в обоих наборах:", l_3)
